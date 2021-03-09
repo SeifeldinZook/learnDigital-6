@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <title>Learn Digital</title>
+
+  <!-- global CSS Starts -->
+  <link rel="stylesheet" href="css/lib/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/main.css" type="text/css" />
+  <link rel="stylesheet" href="css/template/p29_ex24.css" type="text/css" />
+
+  <!-- global CSS End -->
+
+  <!-- global JS Starts -->
+  <script src="js/lib/jquery_v3.3.1.js"></script>
+  <script src="js/lib/bootstrap.min.js"></script>
+
+  <script src="js/lib/underscore-min.js"></script>
+  <!-- global JS End -->
+</head>
+
+<body>
+  <div id="container">
+    <div class="page_content">
+      <div class="container-fluid noPadding">
+        <!-- header start -->
+        <div class="col-xs-12 noPadding header">
+          <div class="box1 title" data-audioSrc="" onClick="fnTitleAudioClick(this)">
+            <img src="assets/images/audio_icon.png" class="img-responsive" />
+          </div>
+          <div class="boxhead5 headingTitle">
+            <h1 style="margin-left: -17px;"> Match the questions to the answers.</h1>
+          </div>
+
+          <div class="box1">
+            <div class="resourseBtn queBox queBox_1" id="imgBox_1">
+              <div class="clickableBox">
+                <img src="assets/images/resourse_icon.png" class="img-responsive" class="btn btn-secondary"
+                  data-toggle="tooltip" data-placement="top" title="Resource" />
+              </div>
+            </div>
+          </div>
+
+          <div class="box1 pull-right helpBtn hide">
+            <img src="assets/images/help_icon.png" class="img-responsive" />
+          </div>
+        </div>
+        <audio id="audioPlayer1" preload="auto" src=""></audio>
+        <audio id="audioPlayer2" preload="auto" src=""></audio>
+        <!-- header end -->
+
+        <!-- page start -->
+        <section class="col-xs-12 pageContainer">
+          <div class="pageBg col-xs-12"></div>
+          <div class="pageContent col-xs-12">
+            <div id="myCarousel" class="carousel slide col-xs-12 template3_v1" data-ride="carousel" data-interval="0"
+              data-wrap="false" data-id="template3_v1">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" >
+                <div class="item active" data-audioSrc="">
+                  <div class="itemContainer" style="position: relative; left: 10px; top: 40px;">
+                    <div class="list1">
+                      <div class="listContainer que_1 disabled" data-id="1">
+                        <div class="textNum">1.&nbsp;&nbsp;</div>
+                        <div class="textItem">
+                          Where
+                          <div class="blue">was he going</div>
+                          at ten in the morning?
+                        </div>
+                        <div class="circle" style="top: 20px;"></div>
+                      </div>
+
+                      <div class="listContainer que_2" data-id="2">
+                        <div class="textNum" >2.&nbsp;&nbsp;</div>
+                        <div class="textItem">
+                          Why
+                          <div class="blue">was Daren running</div>
+                          yesterday morning?
+                        </div>
+                        <div class="circle" style="top: 20px;"></div>
+                      </div>
+
+                      <div class="listContainer que_3" data-id="3">
+                        <div class="textNum">3.&nbsp;&nbsp;</div>
+                        <div class="textItem">
+                          What
+                          <div class="blue">were you doing</div>
+                          when I called you?
+                        </div>
+                        <div class="circle" style="top: 20px;"></div>
+                      </div>
+
+                      <div class="listContainer que_4" data-id="4">
+                        <div class="textNum">4.&nbsp;&nbsp;</div>
+                        <div class="textItem">
+                          <div class="blue">Were the girls chatting</div>
+                          online last night at half past ten?
+                        </div>
+                        <div class="circle" style="top: 20px;"></div>
+                      </div>
+
+                      <div class="listContainer que_5" data-id="5">
+                        <div class="textNum">5.&nbsp;&nbsp;</div>
+                        <div class="textItem">
+                          Who
+                          <div class="blue">was Alice calling</div>
+                          on the phone yesterday at six?
+                        </div>
+                        <div class="circle" style="top: 20px;"></div>
+                      </div>
+
+                      <div class="listContainer que_6" data-id="6">
+                        <div class="textNum">6.&nbsp;&nbsp;</div>
+                        <div class="textItem">
+                          What
+                          <div class="blue">were you cooking</div>
+                          when I came over to your house?
+                        </div>
+                        <div class="circle" style="top: 20px;"></div>
+                      </div>
+
+                      <div class="listContainer que_7" data-id="7">
+                        <div class="textNum">7.&nbsp;&nbsp;</div>
+                        <div class="textItem">
+                          Why
+                          <div class="blue">was your mum wearing</div>
+                          a long dress yesterday?
+                        </div>
+                        <div class="circle" style="top: 20px;"></div>
+                      </div>
+
+                      <div class="listContainer que_8" data-id="8">
+                        <div class="textNum">8.&nbsp;&nbsp;</div>
+                        <div class="textItem">
+                          <div class="blue">Were you and Ben riding</div>
+                          your bikes last Sunday morning?
+                        </div>
+                        <div class="circle" style="top: 20px;"></div>
+                      </div>
+                    </div>
+
+                    <div class="lines">
+                      <svg class="svg_panel">
+                        <polyline class="line line1" points="18, 39 296, 200" style="display: inline;"/>
+                        <polyline class="line line2" points="18, 122 296, 281" />
+                        <polyline class="line line3" points="18, 185 285, 35" />
+                        <polyline class="line line4" points="18, 270 278, 117" />
+                        <polyline class="line line5" points="18, 355 300, 600" />
+                        <polyline class="line line6" points="18, 425 300, 430" />
+                        <polyline class="line line7" points="18, 500 285, 340" />
+                        <polyline class="line line8" points="18, 580 296, 510" />
+                      </svg>
+                    </div>
+
+                    <div class="list2">
+                      <div class="listContainer opt_1" style="top: 20px;" data-answer-id="3">
+                        <div class="circle"></div>
+                        <div class="textNum">a)&nbsp;&nbsp;</div>
+                        <div class="textItem">I
+                          <div class="blue">was watching</div> TV.
+                          <div data-audioSrc="assets/audio/incorrect.mp3" class="showAnswerCrossMark showAns">
+                            <img src="assets/images/crossMark-small.png" style="width: 80%;"/>
+                          </div>
+                          <div data-audioSrc="assets/audio/correct.mp3" class="showAnswerTickMark"></div>
+                        </div>
+                      </div>
+
+                      <div class="listContainer opt_2" data-answer-id="4" style="top: 27px;">
+                        <div class="circle"></div>
+                        <div class="textNum">b)&nbsp;&nbsp;</div>
+                        <div class="textItem">No, they
+                          <div class="blue">weren't</div>. They <div class="blue">were sleeping</div>.
+                          <div data-audioSrc="assets/audio/incorrect.mp3" class="showAnswerCrossMark showAns">
+                            <img src="assets/images/crossMark-small.png" style="width: 80%;"/>
+                          </div>
+                          <div data-audioSrc="assets/audio/correct.mp3" class="showAnswerTickMark"></div>
+                        </div>
+                      </div>
+
+                      <div class="listContainer opt_3 disabled" data-answer-id="1" style="top: 32px;">
+                        <div class="circle"></div>
+                        <div class="textNum">c)&nbsp;&nbsp;</div>
+                        <div class="textItem">He 
+                          <div class="blue">was going </div> to the shops.
+                          <div data-audioSrc="assets/audio/incorrect.mp3" class="showAnswerCrossMark showAns">
+                            <img src="assets/images/crossMark-small.png" style="width: 80%;"/>
+                          </div>
+                          <div data-audioSrc="assets/audio/correct.mp3" class="showAnswerTickMark"></div>
+                        </div>
+                      </div>
+
+                      <div class="listContainer opt_4" data-answer-id="2" style="top: 38px;">
+                        <div class="circle"></div>
+                        <div class="textNum">d)&nbsp;&nbsp;</div>
+                        <div class="textItem">He 
+                          <div class="blue">was trying</div> to catch the bus.
+                          <div data-audioSrc="assets/audio/incorrect.mp3" class="showAnswerCrossMark showAns">
+                            <img src="assets/images/crossMark-small.png" style="width: 80%;"/>
+                          </div>
+                          <div data-audioSrc="assets/audio/correct.mp3" class="showAnswerTickMark"></div>
+                        </div>
+                      </div>
+
+                      <div class="listContainer opt_5" data-answer-id="7" style="top: 42px;">
+                        <div class="circle"></div>
+                        <div class="textNum">e)&nbsp;&nbsp;</div>
+                        <div class="textItem">Because she
+                          <div class="blue">was going</div> to a party.
+                          <div data-audioSrc="assets/audio/incorrect.mp3" class="showAnswerCrossMark showAns">
+                            <img src="assets/images/crossMark-small.png" style="width: 80%;"/>
+                          </div>
+                          <div data-audioSrc="assets/audio/correct.mp3" class="showAnswerTickMark"></div>
+                        </div>
+                      </div>
+
+                      <div class="listContainer opt_6" data-answer-id="6" style="top: 35px;">
+                        <div class="circle" style="position: relative;top: 15px;width: 34px;"></div>
+                        <div class="textNum">f)&nbsp;&nbsp;</div>
+                        <div class="textItem">I
+                          <div class="blue">was cooking </div> chicken with potatoes in the oven!
+                          <div data-audioSrc="assets/audio/incorrect.mp3" class="showAnswerCrossMark showAns">
+                            <img src="assets/images/crossMark-small.png" style="width: 80%;"/>
+                          </div>
+                          <div data-audioSrc="assets/audio/correct.mp3" class="showAnswerTickMark"></div>
+                        </div>
+                      </div>
+
+                      <div class="listContainer opt_7" data-answer-id="8" style="top: 32px;">
+                        <div class="circle"></div>
+                        <div class="textNum">g)&nbsp;&nbsp;</div>
+                        <div class="textItem">No, we
+                          <div class="blue">weren't</div>. We <div class="blue"> were playing </div> tennis.
+                          <div data-audioSrc="assets/audio/incorrect.mp3" class="showAnswerCrossMark showAns">
+                            <img src="assets/images/crossMark-small.png" style="width: 80%;"/>
+                          </div>
+                          <div data-audioSrc="assets/audio/correct.mp3" class="showAnswerTickMark"></div>
+                        </div>
+                      </div>
+
+                      <div class="listContainer opt_8" data-answer-id="5" style="top: 38px;">
+                        <div class="circle"></div>
+                        <div class="textNum">h)&nbsp;&nbsp;</div>
+                        <div class="textItem">She
+                          <div class="blue">was calling</div> her uncle in Germany.
+                          <div data-audioSrc="assets/audio/incorrect.mp3" class="showAnswerCrossMark showAns">
+                            <img src="assets/images/crossMark-small.png" style="width: 80%;"/>
+                          </div>
+                          <div data-audioSrc="assets/audio/correct.mp3" class="showAnswerTickMark"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- page end -->
+
+        <!-- footer start -->
+        <div class="row">
+          <div class="col-xs-12 footer">
+            <div class="box1">
+              <div class="reloadBtnAll" class="btn btn-secondary" data-toggle="tooltip" data-placement="top"
+                title="Restart">
+                <img src="assets/images/replay_icon.png" class="img-responsive" />
+              </div>
+            </div>
+
+            <div class="box3">
+              <div class="audioPlayerContainer" id="audioDragContainer">
+                <div class="col-xs-12 controlsDiv">
+                  <div class="controlsinline">
+                    <div id="pButton" class="col-xs-1 noPadding">
+                      <img src="assets/images/play.png" class="img-responsive playImg"
+                        onClick="fnStartAudio('play');" />
+                      <img src="assets/images/pause.png" class="img-responsive pauseImg"
+                        onClick="fnStartAudio('pause');" />
+                    </div>
+                    <div class="col-xs-11" id="audioDrag">
+                      <div class="slidecontainer">
+                        <input type="range" min="0" max="100" value="0" class="slider" id="myRange" step="0.1" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="box1">
+                <div class="reloadBtnScreen">
+                  <img
+                    src="assets/images/reload_icon.png"
+                    class="img-responsive"
+                  />
+                </div>
+              </div> -->
+
+            <div class="box2">
+              <div class="showAnsBtn" class="btn btn-secondary" data-toggle="tooltip" data-placement="top"
+                title="Show all answers">
+                <img src="assets/images/showAns_icon.png" class="img-responsive" />
+              </div>
+            </div>
+
+            <div class="box1">
+              <div class="backBtn hide">
+                <img src="assets/images/back_icon.png" class="img-responsive" />
+              </div>
+            </div>
+
+            <div class="box4">
+              <div class="pageNumber hide">1 of 1</div>
+            </div>
+
+            <div class="box1">
+              <div class="nextBtn hide">
+                <img src="assets/images/next_icon.png" class="img-responsive inlineblock" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- footer end -->
+
+
+        <div class="resoursePopup pagePopup popup_1" style="display: none;">
+          <div class="resourseContainer">
+
+            <div class="pagePopupContainer">
+              <img class="closeBtn" src="assets/images/close_icon.png" class="btn btn-secondary" data-toggle="tooltip"
+                data-placement="top" title="Close">
+              <div class="col-xs-12 noPadding">
+                <div class="popup-content">
+                  <div id="popupSlider_1" style="height: 100%;" class="carousel slide popupSlider" data-ride="carousel"
+                    data-interval="false">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item item_1">
+                        <div class="content">
+                          <div class="clickableBox">
+                            <img class="center-block" src="assets/images/resource.jpg" style="width: 89%;
+                            position: relative;
+                            top: -8px;">
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- <div class="item item_2">
+                        <div class="content">
+                          <div class="clickableBox">
+                            <img class="center-block" src="assets/images/img.jpg" style="    width: 85%;
+                            margin-top: 20px;" />
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                    <!-- Left and right controls -->
+                    <!-- <a class="carouselLeft" href="#popupSlider_1" data-slide="prev" class="btn btn-secondary"
+                      data-toggle="tooltip" data-placement="top" title="Previous"><img class=""
+                        src="assets/images/popupBack.png" /></a>
+                    <a class="carouselRight" href="#popupSlider_1" data-slide="next" class="btn btn-secondary"
+                      data-toggle="tooltip" data-placement="top" title="Next"><img class=""
+                        src="assets/images/popupNext.png" /></a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="helpPopup" style="display: none;">
+            <div class="helpContainer">
+              <img class="closeBtn" src="assets/images/close_icon.png">
+              <div class="col-xs-12" style="overflow: auto;width:100%;height:100%;font-size:30px;">
+                <p>Help content goes here.</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+
+        <div class="helpPopup" style="display: none;">
+          <div class="helpContainer">
+            <img class="closeBtn" src="assets/images/close_icon.png">
+            <div class="col-xs-12" style="overflow: auto;width:100%;height:100%;font-size:30px;">
+              <p>Help content goes here.</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="helpPopup" style="display: none;">
+        <div class="helpContainer">
+          <img class="closeBtn" src="assets/images/close_icon.png" />
+          <div class="col-xs-12" style="
+                  overflow: auto;
+                  width: 100%;
+                  height: 100%;
+                  font-size: 30px;
+                ">
+            <p>Help content goes here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script type="text/javascript">
+    $(function () {
+      fnSetPlayer();
+      fnTemplate3_v1($("div.active"));
+    });
+  </script>
+  <script type="text/javascript" src="js/template/p29_ex24.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript">
+    var blnMozilla = false;
+    var blnIE = false;
+
+    if (document.attachEvent) {
+        blnIE = true;
+    } else if (document.addEventListener) {
+        blnMozilla = true;
+    }
+
+    function setStyleProperty(obj, property, value) {
+        if (obj) {
+            if (obj.style.property == value) {
+                return;
+            }
+            if (blnIE) eval('obj.style.' + property + ' = "' + value + '"');
+            else obj.style.setProperty(property, value, '');
+        }
+    }
+</script>
+</body>
+
+</html>

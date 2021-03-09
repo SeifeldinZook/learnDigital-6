@@ -1,0 +1,271 @@
+.template3_v1 {
+  font-size: 25px;
+  height: 100%;
+  line-height: 1.2;
+}
+.template3_v1 .circle {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 4px solid #7d51a1;
+  z-index: 2;
+}
+
+.template3_v1 .list1 .circle {
+  position: absolute;
+  top: 0px;
+  left: 385px;
+}
+
+.template3_v1 .sc2 .list1 .circle {
+  position: absolute;
+  right: -25px;
+  top: 0px;
+  left: 185px;
+}
+.template3_v1 .list2 .circle {
+  margin-right: 10px; 
+  margin-top: 0px;
+
+}
+
+.template3_v1 .selected {
+  background-color:#7d51a1;
+}
+.template3_v1 .line {
+  stroke: #7d51a1;
+  stroke-width: 4;
+  display: none;
+}
+
+.template3_v1 .list1 {
+  width: 380px;
+}
+
+.template3_v1 .list2 {
+  width: 519px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  line-height: 1.2;
+}
+.template3_v1 .listContainer {
+  position: relative;
+  display: flex;
+  justify-content: left;
+  margin-bottom: 18px;
+  cursor: pointer;
+
+}
+
+.template3_v1 .list2 .listContainer {
+  margin-bottom: 42px;
+}
+
+.template3_v1 .sc2 .listContainer {
+  position: relative;
+  display: flex;
+  justify-content: left;
+  margin-bottom: 160px;
+  cursor: pointer;
+}
+.template3_v1 .list1 .listContainer {
+  padding-left: 0px;
+}
+.template3_v1 .textNum {
+  font-weight: bold;
+}
+
+.template3_v1 .svg_panel {
+  position: absolute;
+  top: 0px;
+  left: 395px;
+  width: 280px;
+  height: 635px;
+}
+
+.template3_v1 .sc2 .svg_panel {
+  position: absolute;
+  top: 35px;
+  left: 190px;
+  width: 320px;
+  height: 590px;
+}
+
+.template3_v1 .showAnswerTickMark,
+.template3_v1 .showAnswerCrossMark {
+  text-align: center;
+  display: none;
+}
+.template3_v1 .showAnswerCrossMark {
+  animation-name: crossBlinker;
+  animation-duration: 1s;
+  opacity: 0;
+  position: absolute;
+  top: -40px;
+}
+.template3_v1 .opt_1 .showAnswerCrossMark {
+  right: 210px;
+  top: 0px;
+}
+.template3_v1 .opt_2 .showAnswerCrossMark {
+  right: 6px;
+  top: -0px;
+}
+.template3_v1 .opt_3 .showAnswerCrossMark {
+  right: 115px;
+  top: -0px;
+}
+.template3_v1 .opt_4 .showAnswerCrossMark {
+  right: 70px;
+  top: -0px;
+}
+.template3_v1 .opt_5 .showAnswerCrossMark {
+  right: 35px;
+  top: -0px;
+}
+
+.template3_v1 .opt_6 .showAnswerCrossMark {
+  right:315px;
+  top: 30px;
+}
+
+.template3_v1 .opt_7 .showAnswerCrossMark {
+  right: 5px;
+  top: 25px;
+}
+
+.template3_v1 .opt_8 .showAnswerCrossMark {
+  right: 5px;
+  top: 25px;
+}
+
+
+.template3_v1 .disabled, .answeredEx {
+  opacity: 0.6;
+}
+
+@keyframes crossBlinker {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.num {
+  display: inline-block;
+  width: 35px;
+  font-weight: bold;
+}
+.blue {
+  display: inline-block;
+  color: #0e87ae;
+}
+
+.pagePopup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(251, 229, 199, 0.8);
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 2;
+}
+.pagePopupContainer {
+  position: relative;
+  width: 1230px;
+  height: 730px;
+  background-color: rgb(251, 229, 199);
+  border: 5px solid transparent;
+  border-radius: 20px;
+  padding: 20px;
+  position: fixed;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.pagePopup .col-xs-12 {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+.pagePopup .popup-content {
+  width: 100%;
+  height: 100%;
+}
+.pagePopup .popupTextBox {
+  font-size: 140px;
+  margin-right: 100px;
+  line-height: 1;
+}
+
+.pagePopup .popup-content .content {
+  margin-top: 10px;
+}
+.pagePopup .textBox {
+  font-size: 70px;
+  text-align: center;
+  border: 2px solid #7d51a1;
+  border-radius: 20px;
+  padding: 10px 25px 10px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 1;
+  margin-left: 15px;
+}
+
+.pagePopup .audio_Icon {
+  cursor: pointer;
+}
+.pagePopup .popupBottomContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.pagePopup .popupBottomContent .imgContainer {
+  display: inline-block;
+}
+
+.pagePopup .carouselLeft,
+.pagePopup .carouselRight {
+  position: absolute;
+  top: 302px;
+}
+.pagePopup .carouselLeft {
+  left: 5px;
+}
+.pagePopup .carouselRight {
+  right: 5px;
+}
+
+.opacity {
+  opacity: 0.6;
+}
+
+
+@-moz-document url-prefix() {
+  .input {
+    border: 1.3px solid #888;
+  }
+} 
