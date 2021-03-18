@@ -5,7 +5,7 @@ $('.header, .footer').css('height',  (960*13/100)+'px');
 var pageWidth, pageHeight;
 
 var basePage = {
-  width: 1280,
+  width: 1580,
   height: 960,
   scale: 1,
   scaleX: 1,
@@ -40,7 +40,7 @@ function scalePages(page, maxWidth, maxHeight) {
 
  // var newLeftPos = Math.abs(Math.floor(((basePage.width * basePage.scale) - maxWidth)/2));
  // var newTopPos = Math.abs(Math.floor(((basePage.height * basePage.scale) - maxHeight)/2));
- var newLeftPos = Math.abs(Math.floor(((basePage.width * basePage.scale) - maxWidth)/2));
+ 	var newLeftPos = Math.abs(Math.floor(((basePage.width * basePage.scale) - maxWidth)/2));
   var newTopPos = 0;
   page.attr('style', '-webkit-transform:scale(' + basePage.scale + ');left:' + newLeftPos + 'px;top:' + newTopPos + 'px;');
 }

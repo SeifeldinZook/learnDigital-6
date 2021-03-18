@@ -66,6 +66,7 @@ body {
   margin-top: -15px;
   padding-top: 15px;
   overflow: hidden;
+  flex;
   align-items: center;
 }
 
@@ -453,6 +454,10 @@ body {
 
 
 
+
+
+
+
 /* ********* */
 .footer {
   position: relative;
@@ -462,32 +467,44 @@ body {
   margin-top: -15px;
   padding-top: 15px;
   overflow: hidden;
-  background-color: antiquewhite;
+  background-color: transparent;
   align-items: center;
 }
 .pageNumber {
   border: 3px solid rgb(251, 229, 199);
-  background-color: antiquewhite;
+  border-radius: 13px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 68px;
+  height: 76px;
+  background-color: transparent;
 }
 .resoursePopup, .helpPopup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
   background-color: rgba(251, 229, 199, 0.8);
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 2;
 }
+
+
 #container {
-  background-color: antiquewhite;
+  background-image: url('../assets/images/background.jpg');
 }
 .pageContent {
   border: 5px solid transparent;
-  background-color: rgb(251, 229, 199);
+  background-color: transparent;
 }
-
 .pageBg {
-  background-color: antiquewhite;
+  background-color: transparent;
 }
 .resourseContainer, .helpContainer {
-  position: relative;
   width: 1260px;
   height: 460px;
-  background-color: rgb(251, 229, 199);
+  background-color: transparent;
   border: 5px solid transparent;
   border-radius: 20px;
   padding: 20px;
@@ -495,4 +512,7 @@ body {
   top: 51%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.resoursePopup, .helpPopup {
+  background-color: rgba(232, 236, 239, 0.8);
 }
